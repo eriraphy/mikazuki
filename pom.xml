@@ -19,6 +19,7 @@
 
 	<modules>
 		<module>algorithms</module>
+		<module>grpc</module>
 		<module>microservices</module>
 	</modules>
 
@@ -57,6 +58,11 @@
 			<dependency>
 				<groupId>rph.mikazuki</groupId>
 				<artifactId>algorithms</artifactId>
+			</dependency>
+
+			<dependency>
+				<groupId>rph.mikazuki</groupId>
+				<artifactId>grpc</artifactId>
 			</dependency>
 
 			<dependency>
