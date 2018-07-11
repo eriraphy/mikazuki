@@ -19,7 +19,6 @@
 
     <modules>
 		<module>account</module>
-		<module>customer</module>
         <module>discovery</module>
         <module>gateway</module>
     </modules>
@@ -38,11 +37,6 @@
 			<dependency>
 				<groupId>rph.mikazuki.microservices</groupId>
 				<artifactId>account</artifactId>
-			</dependency>
-
-			<dependency>
-				<groupId>rph.mikazuki.microservices</groupId>
-				<artifactId>customer</artifactId>
 			</dependency>
 
             <dependency>

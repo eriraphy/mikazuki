@@ -11,7 +11,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8370/eureka/
+      defaultZone: ${DISCOVERY_URL:http://localhost:8370/eureka/}
     registerWithEureka: true
 
 #logging:
@@ -24,7 +24,8 @@ zuul:
   routes:
     account:
       path: /account/**
-      serviceId: account
-    customer:
-      path: /customer/**
-      serviceId: customer
+      url: http://localhost:8372
+#      serviceid: account-service
+
+
+

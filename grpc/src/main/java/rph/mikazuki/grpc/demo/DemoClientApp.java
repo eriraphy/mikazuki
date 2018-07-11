@@ -27,12 +27,5 @@ public class DemoClientApp {
             client.shutdown();
         }
 
-//        TestClient client = new TestClient("10.31.94.90", 50051);
-//
-//        try {
-//            client.sayHello("test-here");
-//        } finally {
-//            client.shutdown();
-//        }
     }
 }

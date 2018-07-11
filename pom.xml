@@ -30,6 +30,7 @@
 		<project.version>0.0.1-SNAPSHOT</project.version>
 		<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
 		<!--<spring-cloud.version>Brixton.RELEASE</spring-cloud.version>-->
+		<spring-security.version>5.0.6.RELEASE</spring-security.version>
 	</properties>
 
 	<dependencies>
