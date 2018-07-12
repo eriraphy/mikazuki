@@ -1,3 +1,15 @@
+info:
+  component: account-service
+
+server:
+  port: 8372
+
 spring:
   application:
-    name: account-server
+    name: account-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_URL:http://localhost:8370/eureka/}
+    registerWithEureka: true
