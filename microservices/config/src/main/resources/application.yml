@@ -1,0 +1,22 @@
+info:
+  component: config-service
+
+server:
+  port: 8373
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          ### local external config repo ###
+          uri: file://${user.home}/config
+          clone-on-start: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_URL:http://localhost:8370/eureka/}
+    registerWithEureka: true

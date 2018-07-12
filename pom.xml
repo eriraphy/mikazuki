@@ -59,16 +59,19 @@
 			<dependency>
 				<groupId>rph.mikazuki</groupId>
 				<artifactId>algorithms</artifactId>
+				<version>${project.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>rph.mikazuki</groupId>
 				<artifactId>grpc</artifactId>
+				<version>${project.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>rph.mikazuki</groupId>
 				<artifactId>microservices</artifactId>
+				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

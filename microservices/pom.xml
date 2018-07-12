@@ -19,6 +19,8 @@
 
     <modules>
 		<module>account</module>
+		<module>config</module>
+        <module>demo-client</module>
         <module>discovery</module>
         <module>gateway</module>
     </modules>
@@ -30,24 +32,48 @@
 	</properties>
 
 	<dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
 	</dependencies>
 
     <dependencyManagement>
         <dependencies>
-			<dependency>
-				<groupId>rph.mikazuki.microservices</groupId>
-				<artifactId>account</artifactId>
-			</dependency>
+			<!--<dependency>-->
+				<!--<groupId>rph.mikazuki.microservices</groupId>-->
+				<!--<artifactId>account</artifactId>-->
+                <!--<version>${project.version}</version>-->
+			<!--</dependency>-->
 
-            <dependency>
-                <groupId>rph.mikazuki.microservices</groupId>
-                <artifactId>discovery</artifactId>
-            </dependency>
+			<!--<dependency>-->
+				<!--<groupId>rph.mikazuki.microservices</groupId>-->
+				<!--<artifactId>config</artifactId>-->
+                <!--<version>${project.version}</version>-->
+			<!--</dependency>-->
 
-            <dependency>
-                <groupId>rph.mikazuki.microservices</groupId>
-                <artifactId>gateway</artifactId>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>rph.mikazuki.microservices</groupId>-->
+                <!--<artifactId>demo-client</artifactId>-->
+                <!--<version>${project.version}</version>-->
+            <!--</dependency>-->
+
+            <!--<dependency>-->
+                <!--<groupId>rph.mikazuki.microservices</groupId>-->
+                <!--<artifactId>discovery</artifactId>-->
+                <!--<version>${project.version}</version>-->
+            <!--</dependency>-->
+
+            <!--<dependency>-->
+                <!--<groupId>rph.mikazuki.microservices</groupId>-->
+                <!--<artifactId>gateway</artifactId>-->
+                <!--<version>${project.version}</version>-->
+            <!--</dependency>-->
         </dependencies>
     </dependencyManagement>
 

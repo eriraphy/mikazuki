@@ -14,18 +14,16 @@ eureka:
       defaultZone: ${DISCOVERY_URL:http://localhost:8370/eureka/}
     registerWithEureka: true
 
-#logging:
-#  level:
-#    ROOT: INFO
-#    org.springframework.web: DEBUG
-
 zuul:
   prefix: /api
   routes:
     account:
       path: /account/**
-      url: http://localhost:8372
-#      serviceid: account-service
+#      url: http://localhost:8372
+      serviceid: account-service
+    demo-client:
+      path: /demo-client/**
+      serviceid: demo-client
 
 
 
