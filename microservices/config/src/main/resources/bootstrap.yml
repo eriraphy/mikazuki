@@ -12,9 +12,9 @@ spring:
       server:
         git:
           ### local external config repo ###
-          uri: file://${user.home}/IdeaProjects/mikazuki-config
+#          uri: file://${user.home}/IdeaProjects/mikazuki-config
           ### remote external config repo ###
-#          uri: https://github.com/eriraphy/mikazuki-config.git
+          uri: https://github.com/eriraphy/mikazuki-config.git
           clone-on-start: true
 
 eureka:

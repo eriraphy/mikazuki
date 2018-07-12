@@ -1,29 +1,18 @@
-info:
-  component: gateway-service
-
 server:
-  port: 8371
+  port: 8080
 
 spring:
   application:
     name: gateway-service
+  cloud:
+    config:
+      uri: ${CONFIG_URL:http://localhost:8373}
 
 eureka:
   client:
     serviceUrl:
       defaultZone: ${DISCOVERY_URL:http://localhost:8370/eureka/}
     registerWithEureka: true
-
-zuul:
-  prefix: /api
-  routes:
-    account:
-      path: /account/**
-#      url: http://localhost:8372
-      serviceid: account-service
-    demo-client:
-      path: /demo-client/**
-      serviceid: demo-client
 
 
 

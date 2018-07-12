@@ -6,3 +6,4 @@ spring:
   cloud:
     config:
       uri: ${CONFIG_URL:http://localhost:8373}
+
