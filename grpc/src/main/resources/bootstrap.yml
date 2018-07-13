@@ -1,0 +1,17 @@
+server:
+  port: 8377
+
+grpc:
+  port: 6565
+
+spring:
+    application:
+        name: grpc-service
+
+eureka:
+  instance:
+    non-secure-port: ${grpc.port}
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_URL:http://localhost:8370/eureka/}
+    registerWithEureka: true

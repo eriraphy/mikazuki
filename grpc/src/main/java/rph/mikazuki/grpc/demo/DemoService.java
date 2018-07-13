@@ -1,11 +1,13 @@
 package rph.mikazuki.grpc.demo;
 
 import io.grpc.stub.StreamObserver;
+import org.lognet.springboot.grpc.GRpcService;
 import rph.mikazuki.grpc.TerminalGrpc;
 import rph.mikazuki.grpc.TerminalProto;
 
 import java.util.concurrent.TimeUnit;
 
+@GRpcService
 public class DemoService extends TerminalGrpc.TerminalImplBase {
 
     @Override

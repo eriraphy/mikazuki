@@ -19,6 +19,7 @@
 
 	<modules>
 		<module>algorithms</module>
+		<module>demo</module>
 		<module>grpc</module>
 		<module>microservices</module>
 	</modules>
@@ -31,6 +32,7 @@
 		<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
 		<!--<spring-cloud.version>Brixton.RELEASE</spring-cloud.version>-->
 		<spring-security.version>5.0.6.RELEASE</spring-security.version>
+		<grpc.version>1.11.0</grpc.version>
 	</properties>
 
 	<dependencies>
@@ -59,6 +61,12 @@
 			<dependency>
 				<groupId>rph.mikazuki</groupId>
 				<artifactId>algorithms</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>rph.mikazuki</groupId>
+				<artifactId>demo</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 

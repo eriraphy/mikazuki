@@ -14,6 +14,7 @@ public class DemoClient extends GrpcClient {
     private TerminalGrpc.TerminalBlockingStub blockingStub;
     private TerminalGrpc.TerminalStub asyncStub;
 
+
     public DemoClient(String host, int port) {
         super(host, port);
         blockingStub = TerminalGrpc.newBlockingStub(channel);
