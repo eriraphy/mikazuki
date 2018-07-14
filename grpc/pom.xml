@@ -21,7 +21,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<grpc.version>1.11.0</grpc.version>
 	</properties>
 
 	<dependencies>
@@ -57,6 +56,8 @@
 				<artifactId>protobuf-maven-plugin</artifactId>
 				<version>0.5.0</version>
 				<configuration>
+					<!--local external grpc protobuf-->
+					<protoSourceRoot>${user.home}/IdeaProjects/mikazuki-config</protoSourceRoot>
 					<protocArtifact>com.google.protobuf:protoc:3.3.0:exe:${os.detected.classifier}</protocArtifact>
 					<pluginId>grpc-java</pluginId>
 					<pluginArtifact>
@@ -76,17 +77,16 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.4</version>
 				<executions>
 					<execution>
-						<id>test</id>
+						<id>add-source</id>
 						<phase>generate-sources</phase>
 						<goals>
 							<goal>add-source</goal>
 						</goals>
 						<configuration>
 							<sources>
-								<source>${basedir}/target/generated-sources</source>
+								<source>${project.build.directory}/generated-sources</source>
 							</sources>
 						</configuration>
 					</execution>

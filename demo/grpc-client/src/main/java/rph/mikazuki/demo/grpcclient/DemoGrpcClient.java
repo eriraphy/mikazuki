@@ -6,6 +6,8 @@ import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.stereotype.Component;
+import rph.mikazuki.grpc.TerminalGrpc;
+import rph.mikazuki.grpc.TerminalProto;
 
 @EnableEurekaClient
 @Component
