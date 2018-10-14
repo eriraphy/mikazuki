@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: demo-client
-  profiles:
-    active: test
-  cloud:
-    config:
-      uri: ${CONFIG_URL:http://localhost:8373}
-

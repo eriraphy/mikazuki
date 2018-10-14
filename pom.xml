@@ -32,6 +32,7 @@
 		<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
 		<!--<spring-cloud.version>Brixton.RELEASE</spring-cloud.version>-->
 		<spring-security.version>5.0.6.RELEASE</spring-security.version>
+		<mybatis-spring.version>1.3.2</mybatis-spring.version>
 		<grpc.version>1.11.0</grpc.version>
 	</properties>
 
@@ -56,6 +57,12 @@
 				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>1.3.2</version>
 			</dependency>
 
 			<dependency>

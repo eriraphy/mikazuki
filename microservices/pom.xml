@@ -18,9 +18,7 @@
 	</parent>
 
     <modules>
-		<module>account</module>
 		<module>config</module>
-        <module>demo-client</module>
         <module>discovery</module>
         <module>gateway</module>
     </modules>
